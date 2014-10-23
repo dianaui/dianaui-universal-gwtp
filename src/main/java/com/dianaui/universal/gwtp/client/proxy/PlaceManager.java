@@ -38,7 +38,7 @@ import java.util.List;
  */
 public class PlaceManager extends DefaultPlaceManager {
 
-    private final TokenFormatter tokenFormatter;
+    protected final TokenFormatter tokenFormatter;
     private String historyToken = null;
     private String previousHistoryToken = null;
 
