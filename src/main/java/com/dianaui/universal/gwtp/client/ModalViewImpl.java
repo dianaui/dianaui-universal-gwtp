@@ -1,5 +1,3 @@
-package com.dianaui.universal.gwtp.client;
-
 /*
  * #%L
  * Diana UI Core
@@ -9,9 +7,9 @@ package com.dianaui.universal.gwtp.client;
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -19,6 +17,7 @@ package com.dianaui.universal.gwtp.client;
  * limitations under the License.
  * #L%
  */
+package com.dianaui.universal.gwtp.client;
 
 import com.dianaui.universal.core.client.event.HideEvent;
 import com.dianaui.universal.core.client.event.HideHandler;
@@ -50,7 +49,7 @@ public abstract class ModalViewImpl extends ViewImpl implements PopupView {
      *
      * @param eventBus The {@link EventBus}.
      */
-    protected ModalViewImpl(EventBus eventBus) {
+    protected ModalViewImpl(final EventBus eventBus) {
         this.eventBus = eventBus;
     }
 
@@ -77,7 +76,7 @@ public abstract class ModalViewImpl extends ViewImpl implements PopupView {
     }
 
     @Override
-    public void setAutoHideOnNavigationEventEnabled(boolean autoHide) {
+    public void setAutoHideOnNavigationEventEnabled(final boolean autoHide) {
         if (autoHide) {
             if (autoHideHandler != null) {
                 return;
@@ -127,7 +126,7 @@ public abstract class ModalViewImpl extends ViewImpl implements PopupView {
 
     @Override
     @Deprecated
-    public void setPosition(int left, int top) {
+    public void setPosition(final int left, final int top) {
         // not implemented
     }
 
